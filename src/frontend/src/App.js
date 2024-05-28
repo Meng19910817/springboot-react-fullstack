@@ -35,7 +35,7 @@ function App() {
     const [collapsed, setCollapsed] = useState(false);
     const [fetching, setFetching] = useState(true);
     const [showDrawer, setShowDrawer] = useState(false);
-    const [contextHolder] = notification.useNotification();
+    const [api, contextHolder] = notification.useNotification();
 
 
     const fetchStudents = () => getStudents().then(res => {
