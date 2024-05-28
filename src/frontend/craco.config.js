@@ -8,9 +8,5 @@ module.exports = {
             "@": resolve("src"),
             "components": resolve("src/components")
         }
-    },
-    eslint: {
-        enable: false,
-    },
-
+    }
 }
