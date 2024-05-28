@@ -17,7 +17,6 @@ import {
     theme,
     Table,
     Spin,
-    Empty,
     Button,
     Badge,
     Tag,
@@ -36,7 +35,7 @@ function App() {
     const [collapsed, setCollapsed] = useState(false);
     const [fetching, setFetching] = useState(true);
     const [showDrawer, setShowDrawer] = useState(false);
-    const [api, contextHolder] = notification.useNotification();
+    const [contextHolder] = notification.useNotification();
 
 
     const fetchStudents = () => getStudents().then(res => {
